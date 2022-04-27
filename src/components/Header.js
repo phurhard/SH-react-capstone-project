@@ -11,14 +11,7 @@ const Header =()=> {
                 <ul className='nav-title'>
                     <li className='nav-list'>Home</li>
                     <li className='nav-list'>
-                        Services <b className="Caret">'''</b>
-                        <ul className="dropdown">
-                            <li>Breakfast</li>
-                            <li>Brunch</li>
-                            <li>Lunch</li>
-                            <li>Dinner/Supper</li>
-                            <li>Refreshements/Drinks/Dessert</li>
-                        </ul>
+                        Services
                     </li>
                     <li className='nav-list'>About</li>
                     <li className='nav-list'>Contact</li>

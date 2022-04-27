@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import Hero from './images/Hero-food.jpg'
+import Footer from './Footer'
+import Header from './Header'
+import Hero from './images/Hero.jpg'
 export default class componentName extends Component {
     render() {
         return (
+            <>
+            <Header/>
             <div className='Body-container'>
                 <div className='Body-text'>
                     <h1>
-                        Where you get to satisfy your taste buds !
+                        Where you get to satisfy your taste buds!
                     </h1>
                     <p>
                         Meido Chops is a restuarant that caters to all your daily needs in terms pf mouth watering dishes, our services ranges from locally prepared foods by expert chefs, to intercontinental cuisines, we also have small chops for your refreshemnet and not limitted to our assortment of drinks.
@@ -17,6 +21,8 @@ export default class componentName extends Component {
                     <img src={Hero} alt='Sample of our service'/>
                 </div>
             </div>
+            <Footer/>
+            </>
         )
     }
 }

@@ -5,9 +5,13 @@
     justify-content: space-between;
     padding:10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 20px #f39c6a79;
 }
 .BrandName{
     font-weight:bolder;
+    background-color: #f38f6ac2;
+    border-radius: 10px;
+    padding:15px;
 }
 .nav-title{
     list-style:none;
@@ -15,51 +19,302 @@
 .nav-list{
     display: inline-block;
     margin:0 15px;
-    padding:5px;
+    padding:15px;
+    color:white;
     font-weight:bold;
     border-radius: 5px;
-    color: #fd5417;
+    background-color: #fd5417;
     cursor:pointer;
 }
 .Body-container{
     padding:10px;
-    display:grid;
-    height:78vh;
+    display:flex;
+    flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 60% 40%;
-}
-.Body-text, .Body-image{
-    padding:10px;
+    justify-content: space-around;
+    align-items: center;
+    margin:4em auto;
 }
 .Body-text{
     text-align: left;
-    margin:0 10% 0 0;
+    align-self: stretch;
+    padding:10px;
+    margin: 0 10px 0 0;
 }
 .Body-text>h1{
-    width:50%;
+    width:fit-content;
 }
 .Body-text>p{
-    height: max-content;
+    width:fit-content;
     font-weight: lighter;
 }
 .Body-image img{
-    width:500px;
+    width:100%;
+    height:auto;
     border-radius: 10px;
 }
 .Footer{
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     color: tomato;
 }
 .Social-Contacts{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .Social-Contacts a{
+    padding:4px;
+    margin:3px;
+}
+.Contact-container{
+    display:grid;
+    grid-template-rows:auto auto;
+    padding:10px;
+    margin:1em;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Contact-Info{
+    padding:8px;
+    margin:auto 5px;
+    display: inline;
+    align-self: stretch;
+    
+}
+.Contact-Info h3{
+    font-weight: lighter;
+}
+.Contact-Info a{
+    text-decoration: none;
+    color:inherit;
+}
+.Contact-Message{
+    display: inline-block;
+    padding:5px;
+    overflow: hidden;
+}
+.Contact-Image{
+    width:100%;
+    height:auto;
+}
+
+.Contact-form input{
+    width: 80%;
+    display: block;
+    margin:auto;
+}
+.Contact-form textarea{
+    width:80%;
+    height:200px;
+    padding:10px;
+    font-size: large;
+    margin:auto;
+}
+.Services-container{
+    padding:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.479);
+    border-radius: 10px;
+}
+.card{
+    padding: 5px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 2px 2px 20px rgb(172, 172, 172);
+}
+.cardtitle{
+    text-align: center;
+    background-color: #f7ded5b7;
+    border-radius: 4px;
+    padding:10px;
+    margin: 10px;
+}
+.cardImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardImage img{
+    width:400px;
+    height:400px;
+}
+.cardbottom{
+    padding:4px;
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardbottom span{
+    background-color: antiquewhite;
+    padding:10px;
+    border-radius: 3px;
+    margin:0 10px;
+}
+.btn{
+    outline:none;
+    border-radius: 10px;
+    border:none;
+    margin:1em auto;
+    padding:5px;
+}
+.btn-primary, .Orderbtn{
+    padding:10px;
+    margin:0 10px;
+    background-color: #fd5417 !important;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.About-container{
+    padding:4px;
+}
+.About{
     padding:10px;
 }
-.dropdown{
-    display: none;
+.About-title{
+    font-weight: bolder;
+    font-size:2em;
+}
+.About-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px;
+    box-shadow: 2px  2px 10px rgb(161, 159, 159);
+}
+.About-text{
+    margin: 4px 10px 4px 2px;
+    display: inline-block;
+    width:50%;
+    align-self: stretch;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 2px;
+}
+.About-image{
+    display: inline-block;
+}
+.Manager-hero{
+    margin:0 5px 0 0;
+}
+.Promotions{
+    margin: 1em auto;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgb(85, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* MEDIA QUERIES */
+@media  screen and (max-width:768) {
+    .BrandName{
+        font-weight:bold;
+        padding:15px;
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width:600px){
+    /* HEADER  */
+    .Nav-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .BrandName{
+        font-weight:200;
+        padding:10px;
+        width:fit-content;
+    }
+    .nav-list{
+        margin:0 3px;
+        padding:10px;
+        /* font-size: smaller; */
+        font-weight: 400;        
+    }
+    /* PROMOTIONS  */
+    .Promotions{
+        margin: 4em auto;
+        padding: 30px 10px;
+        font-size: small;
+    }
+    /* CONTACT */
+    
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    box-shadow: 2px 2px 10px rgb(243, 137, 122);
+}
+.Contact-Info{
+    padding:8px;
+    margin:2em auto;
+    display: block;
+    align-self: stretch;
+    
+}
+.Contact-Info h3{
+    font-weight: lighter;
+}
+.Contact-Message{
+    margin:2em auto;
+    padding: 10px;
+    width: fit-content;
+    align-self:flex-start;
+    box-shadow: 2px 2px 10px blanchedalmond;
+}
+
+.Contact-form input{
+    width: fit-content;
+}
+    /* ABOUT */
+    
+    .About-container{
+      padding:14px;
+    }
+    .About-text-container{
+        flex-direction: column;
+    }
+    .About-text{
+        width:fit-content;
+    }
+    /* SERVICES */
+    .Services-container{
+        padding:5px;
+        display:flex;
+        flex-direction: column;
+    }
+    .card{
+        padding: 3px;
+        margin: 1% 20%;
+    }
+    .cardtitle{
+        padding:5px;
+        margin: 5px;
+    }
+    .cardImage img{
+        width:100%;
+        height:auto;
+    }
+    /* BODY */
+    .Body-container{
+        flex-direction: column;
+    }
+    .Body-text, .Body-image{
+        padding:10px;
+    }
+    .Body-text>h1{
+        width: fit-content;
+    }
+    
 }
