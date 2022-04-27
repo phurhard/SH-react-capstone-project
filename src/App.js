@@ -9,10 +9,6 @@ const App = () => {
     return (
         <>
         <Body/>
-        <Services/>
-        <About/>
-        <Contact/>
-        <Promotions/>
         </>
     )
 }
