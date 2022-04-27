@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Hero from './images/Hero.jpg'
+import egunsi from './images/pounded-yam-with-egusi.jpg'
 const Home = () =>  {
     return (
             <>
@@ -14,7 +14,7 @@ const Home = () =>  {
                         <p>What's your preference? You'll surely get it at <b className='Highlight'>Meido Chops</b></p>
                     </div>
                     <div className='Body-image'>
-                        <img src={Hero} alt='Sample of our service'/>
+                        <img src={egunsi} alt='Sample of our service'/>
                     </div>
                 </div>
             </>
